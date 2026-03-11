@@ -544,6 +544,69 @@ ul {
   color: var(--text-secondary);
 }
 
+/* ── CURSOR GLOW ─────────────────────────────────────────────── */
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(99, 102, 241, 0.13) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.08s linear, opacity var(--transition);
+  opacity: 0;
+  will-change: transform;
+}
+
+.cursor-glow.active {
+  opacity: 1;
+}
+
+/* ── HAMBURGER BUTTON ────────────────────────────────────────── */
+.nav__hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 2.25rem;
+  height: 2.25rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  z-index: 110;
+}
+
+.nav__hamburger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--text-primary);
+  border-radius: 2px;
+  transition: transform 0.35s ease, opacity 0.25s ease, width 0.25s ease;
+  transform-origin: center;
+}
+
+.nav__hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav__hamburger.open span:nth-child(2) {
+  opacity: 0;
+  width: 0;
+}
+
+.nav__hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 /* ── RESPONSIVE ──────────────────────────────────────────────── */
 @media (max-width: 768px) {
   .about__grid {
@@ -569,8 +632,40 @@ ul {
 }
 
 @media (max-width: 480px) {
+  .nav__hamburger {
+    display: flex;
+  }
+
   .nav__links {
-    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.97);
+    backdrop-filter: blur(18px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    z-index: 105;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-12px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+  }
+
+  .nav__links.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .nav__links a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  .nav__links a:hover {
+    color: var(--accent-hover);
   }
 
   .hero__cta {

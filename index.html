@@ -14,15 +14,23 @@
   </head>
   <body>
 
+    <!-- ── CURSOR GLOW ───────────────────────────────────────── -->
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
     <!-- ── NAV ──────────────────────────────────────────────── -->
     <nav class="nav" id="nav">
       <a href="#hero" class="nav__logo">AR</a>
-      <ul class="nav__links">
+      <ul class="nav__links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
 
     <main>
