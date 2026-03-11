@@ -1,0 +1,283 @@
+# AI Context — Portfolio Website Project
+
+You are helping build a personal portfolio website for a student in an Interactive Design and Animation program.
+
+## Developer Skill Level
+
+The user is NOT an experienced programmer.
+
+Therefore:
+- Always generate FULL files.
+- Never provide partial snippets that require the user to figure out where code goes.
+- Code must be copy-paste ready.
+- Avoid unnecessary complexity.
+
+Explain things only if explicitly asked.
+
+---
+
+# Project Overview
+
+We are building a **modern, visually impressive portfolio website** that looks professional and creative.
+
+The website should feel similar in quality to portfolios seen on:
+
+- Awwwards
+- Dribbble
+- Behance featured portfolios
+
+But must remain **technically simple**.
+
+---
+
+# Technical Constraints (STRICT)
+
+Use ONLY:
+
+- HTML
+- CSS
+- Vanilla JavaScript
+
+DO NOT use:
+
+- React
+- Vue
+- Angular
+- npm
+- TypeScript
+- build tools
+- external JS libraries
+
+The website must work by simply opening:
+
+index.html
+
+in a browser.
+
+---
+
+# Required File Structure
+
+The project must follow this EXACT structure.
+
+/
+index.html
+
+/css
+styles.css
+
+/js
+main.js
+
+/assets
+/images
+
+Use placeholder images from:
+
+https://placehold.co
+
+Example:
+
+https://placehold.co/600x400
+
+---
+
+# Website Sections
+
+The page must contain these sections in order:
+
+1. Hero
+2. About
+3. Work / Projects
+4. Skills
+5. Contact
+6. Footer
+
+---
+
+# Placeholder Content
+
+Name:
+Alex Rivera
+
+Tagline:
+Designer. Animator. Creative Thinker.
+
+Bio:
+I'm a multidisciplinary designer who loves bringing ideas to life through motion, interaction, and visual storytelling. Currently finishing my diploma in Interactive Design and Animation.
+
+Projects:
+
+Brand Identity — Cafe Luna  
+Motion Reel 2025  
+UI Concept — Fitness App  
+3D Character Design  
+Event Poster Series  
+Interactive Infographic
+
+Skills:
+
+Figma  
+After Effects  
+Photoshop  
+Illustrator  
+Blender  
+HTML/CSS  
+Premiere Pro
+
+Social Links:
+
+Behance  
+LinkedIn  
+Instagram
+
+All links should use "#" placeholders.
+
+---
+
+# Design Style
+
+The aesthetic should be:
+
+Modern  
+Minimal  
+Creative  
+Professional  
+Dark Mode
+
+Inspired by modern portfolio sites.
+
+---
+
+# Design Tokens
+
+Use CSS variables.
+
+Colors:
+
+--bg-color: #0f172a
+--card-color: #111827
+--accent-color: #6366f1
+--accent-hover: #818cf8
+--text-primary: #f9fafb
+--text-secondary: #9ca3af
+
+Typography:
+
+Headings: Space Grotesk  
+Body: Inter
+
+Import via Google Fonts.
+
+---
+
+# Layout Requirements
+
+Hero:
+Large centered intro with CTA button.
+
+About:
+Profile photo + bio text.
+
+Projects:
+Responsive card grid.
+
+Skills:
+Grid of skill tags or icons.
+
+Contact:
+Social links with hover effects.
+
+Footer:
+Simple copyright text.
+
+---
+
+# Responsiveness
+
+Must work on:
+
+Mobile  
+Tablet  
+Desktop
+
+Use:
+
+CSS Grid  
+Flexbox  
+clamp()  
+fluid spacing
+
+---
+
+# Animations (IMPORTANT)
+
+The site must include modern but subtle animations:
+
+• Scroll fade-ins  
+• Card hover animations  
+• Smooth scrolling  
+• Button hover transitions  
+• Slight image zoom on hover
+
+Use:
+
+Intersection Observer API
+
+for scroll-triggered animations.
+
+---
+
+# Performance
+
+Keep JavaScript minimal.
+
+Avoid heavy animations that reduce performance.
+
+Animations must feel smooth.
+
+---
+
+# Development Workflow Rules
+
+When creating the project for the first time:
+
+Generate ALL required files.
+
+When updating:
+
+Only output files that changed.
+
+Always output FULL file contents.
+
+Never change the folder structure unless asked.
+
+---
+
+# Code Quality
+
+Code must be:
+
+Clean  
+Readable  
+Well formatted  
+Semantic
+
+Use:
+
+<header>
+<main>
+<section>
+<footer>
+
+---
+
+# Goal
+
+Produce a portfolio website that:
+
+• looks impressive
+• loads instantly
+• is easy to customize
+• works without build tools
+• can be deployed to GitHub Pages
